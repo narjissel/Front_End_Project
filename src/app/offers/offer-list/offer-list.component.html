@@ -1,0 +1,8 @@
+<div class="offers-container">
+  <h2>Nos Offres Spéciales</h2>
+  <div *ngFor="let offer of offers" class="offer-item">
+    <h3>{{ offer.title }}</h3>
+    <p>{{ offer.description }}</p>
+    <button (click)="navigateToProduct(offer.productId)">Voir le produit</button>
+  </div>
+</div>

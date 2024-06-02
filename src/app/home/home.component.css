@@ -1,0 +1,79 @@
+/* Conteneur principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  /* Héros */
+  .hero {
+    background-image: url('/assets/images/hero-background.jpg');
+    width: 100%;
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px; /* Augmenter l'espace sous le héros */
+  }
+  
+  /* Liste des parties du robot */
+  .robot-parts-cta {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .robot-parts-cta li {
+    margin: 0 20px; /* Augmenter l'espace horizontal entre les éléments */
+  }
+  
+  /* Lien de la partie du robot */
+  .robot-parts-cta .part {
+    text-decoration: none;
+    color: #333; /* Couleur du texte */
+    transition: all 0.3s ease; /* Animation de transition pour une expérience utilisateur plus fluide */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .robot-parts-cta .part img {
+    width: 200px; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    border-radius: 10px; /* Bordure arrondie pour l'image */
+    margin-bottom: 15px; /* Espace en bas de l'image */
+  }
+  
+  .robot-parts-cta .part .details {
+    text-align: center;
+  }
+  
+  .robot-parts-cta .part .name {
+    font-size: 18px; /* Taille de la police pour le nom */
+    margin-bottom: 5px; /* Espace en bas du nom */
+  }
+  
+  .robot-parts-cta .part .description {
+    font-size: 14px; /* Taille de la police pour la description */
+  }
+  
+  /* Effet de survol pour mettre en évidence les liens */
+  .robot-parts-cta .part:hover {
+    transform: translateY(-5px); /* Déplacer légèrement vers le haut lors du survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ajouter une ombre subtile */
+  }
+  
+  /* Couleurs des conteneurs */
+  .blue-container {
+    background-color: lightblue; /* Couleur de fond bleu clair */
+  }
+  
+  .beige-container {
+    background-color: beige; /* Couleur de fond beige */
+  }
+  
+  .gray-container {
+    background-color: lightgray; /* Couleur de fond gris clair */
+  }
+  

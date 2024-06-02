@@ -1,0 +1,45 @@
+<div class="row p-3 m-3">
+  <div class="col-sm-9">
+    <div class="card">
+      <div class="card-body">
+        <img [src]="product.image" [alt]="product.name" class="img-thumbnail">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2 align-content-center">
+    <div class="d-flex justify-content-between">
+      <h5>{{product.name}}</h5>
+      <h5>{{product.price}} $</h5>
+    </div>
+    <div class="card m-2">
+      <div class="card-body">
+        <div class="row text-center">
+          <div class="col">
+            <button class="btn btn-info rounded-circle" (click)="remove()">
+              -
+            </button>
+          </div>
+          <div class="col h2">
+            {{quantity}}
+          </div>
+          <div class="col">
+            <button class="btn btn-info rounded-circle" (click)="add()">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="text-muted">{{product.title}}</p>
+      <p>{{product.description}}</p>
+    </div>
+    <div class="p-3 flex d-flex justify-content-between">
+      <h5>Total : </h5>
+      <h5>{{quantity * product.price}} $</h5>
+    </div>
+    <div class="d-grid">
+      <button type="button" class="btn btn-outline-info btn-block" (click)="buy()" [disabled] = "quantity <= 0">add to the Cart</button>
+    </div>
+  </div>
+</div>

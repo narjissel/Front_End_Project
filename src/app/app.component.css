@@ -1,0 +1,20 @@
+.navbar-nav .nav-link {
+    color: #ea07ff !important; /* Couleur du texte des liens de la barre de navigation */
+    font-size: 20px !important; /* Taille du texte des liens de la barre de navigation */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* Couleur du texte des liens de la barre de navigation au survol */
+    font-size: 20px !important; /* Taille du texte des liens de la barre de navigation au survol */
+  }
+  
+  .btn-outline-success {
+    color: #28a745; /* Couleur du texte du bouton de recherche */
+    border-color: #28a745; /* Couleur de la bordure du bouton de recherche */
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #218838; /* Couleur de fond du bouton de recherche au survol */
+    border-color: #1e7e34; /* Couleur de la bordure du bouton de recherche au survol */
+  }
+  

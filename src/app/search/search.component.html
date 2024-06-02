@@ -1,0 +1,33 @@
+<h1>Results for "{{ searchProductTitle }}"</h1>
+<hr>
+<form (ngSubmit)="searchProducts()">
+
+<hr>
+
+<table class="table table-striped" *ngIf="products.length > 0">
+  <thead>
+    <tr>
+      
+      <th scope="col">Cover</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products; let i = index">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>
+        <img [src]="product.image" width="100" />
+      </td>
+      <td>{{ product.title }}</td>
+      <td>{{ product.description }}</td>
+      <td>
+        <a class="btn btn-warning"><i class="bi bi-product"></i> More</a>
+        <a class="btn btn-primary" [routerLink]="['/details', product.title]"><i class="bi bi-eye"></i> Details</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p *ngIf="products.length === 0 && searchProductTitle">No products found for "{{ searchProductTitle }}"</p>
