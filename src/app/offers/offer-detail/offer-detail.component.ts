@@ -25,7 +25,7 @@ export class OfferDetailComponent implements OnInit  {
   }
 
   navigateToProduct(productId: number): void {
-    this.router.navigate(['/product', productId]);
+    this.router.navigate(['/productoffer', productId]);
   }
   
 

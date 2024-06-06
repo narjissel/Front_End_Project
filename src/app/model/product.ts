@@ -7,6 +7,7 @@ export class Product {
   private _description : string = '';
   private _image : string = '';
   private _catalog: string = ''; 
+   private _stock: number = 0;
 
 
   constructor() {
@@ -51,6 +52,15 @@ export class Product {
     this._price = value;
   }
 
+
+  get stock(): number {
+    return this._stock;
+  }
+
+  set stock(value: number) {
+    this._stock = value;
+  }
+
   get description(): string {
     return this._description;
   }
@@ -74,5 +84,6 @@ export class Product {
   set catalog(value: string) {
     this._catalog = value;
   }
+  
   
 }

@@ -38,8 +38,16 @@ export class ProductService{
     );
 }*/
 
-  addToCart(item : ShoppingCartItem){
+  addToCart(item : ShoppingCartItem ){
     console.log('service : add to cart');
+    // Vérifier si un article avec le même produit, la même couleur et la même taille existe déjà
+    const existingItemIndex = this.cart._items.findIndex(x => 
+      x._product.id === item._product.id &&
+      x.color === item.color &&
+      x.size === item.size
+    );
+    
+
     if(this.isExisted( item)){
       console.log('finding item');
       let index = this.cart._items.findIndex(

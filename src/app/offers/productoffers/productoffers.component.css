@@ -3,48 +3,49 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-.color-label {
+  }
+  
+  .color-label {
     display: flex;
     align-items: center;
     gap: 5px;
     cursor: pointer;
-}
-
-.color-box {
+  }
+  
+  .color-box {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     display: inline-block;
     transition: border 0.3s;
-}
-
-.color-label input[type="checkbox"] {
+  }
+  
+  .color-label input[type="checkbox"] {
     display: none;
-}
-
-.color-label input[type="checkbox"]:checked + .color-box {
+  }
+  
+  .color-label input[type="checkbox"]:checked + .color-box {
     border: 3px solid black;
-}
-
-.color-name {
+  }
+  
+  .color-name {
     margin-left: 5px;
     font-weight: bold;
-}
-
-.btn-group {
+  }
+  
+  .btn-group {
     display: flex;
     gap: 10px;
-}
-
-.btn-size {
+  }
+  
+  .btn-size {
     padding: 10px 15px;
     border: 2px solid transparent;
     cursor: pointer;
     transition: border 0.3s;
-}
-
-.btn-size.selected {
+  }
+  
+  .btn-size.selected {
     border-color: black;
-}
+  }
+  

@@ -22,9 +22,16 @@ export class CatalogComponent implements OnInit {
   
   products: Product[] = [];
   filteredProducts: Product[] = [];
-  //carts: Product[] = []
+  product: Product = new Product();
+  item: ShoppingCartItem = new ShoppingCartItem();
+  selectedSize: string = '';
+  outOfStockMessage: string = '';
+  alertMessage: string = '';
+  quantity: number = 0;
+  stock: number = 0; 
+  selectedColor: string = '';
+  productId: number = 0;
 
-  //private cartService: CartService = inject(CartService)
 
   @Input()
   myValue : string = "";
@@ -41,6 +48,7 @@ export class CatalogComponent implements OnInit {
   }
   
   ngOnInit(): void {
+   
     this.productService.getProducts().subscribe(
       (products: Product[]) => {
         this.products = products;
@@ -54,14 +62,41 @@ export class CatalogComponent implements OnInit {
       }
     );
   }
+
   
- 
+  
+
+  buy() {
+
+    console.log('component : click add to cart .....');
+    console.log("name  : " + this.product.name);
+    this.item._product = this.product;
+    this.item._quantity = this.quantity;
+    this.item.color = this.selectedColor;  // Ajouter la couleur choisie
+    this.item.size = this.selectedSize;  
+    this.productService.addToCart(this.item );
+    this.quantity = 0;
+    this.navigateToProductDetail();
+  }
+  navigateToProductDetail(): void {
+    this.router.navigate(['/products']);
+    
+  }
+/*
+  navigateToCart(): void {
+    this.router.navigate(['/product/:id']);
+  }*/
+
+  
+ /*
   addToCart(product: Product): void {
     const item: ShoppingCartItem = new ShoppingCartItem();
     item._product = product;
     item._quantity = 1;
     this.router.navigate(['/cart']);
   }
+
+  */
 /*
   getFilteredProducts(): Product[] {
     return this.filter === ''

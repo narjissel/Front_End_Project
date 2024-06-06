@@ -53,6 +53,24 @@
       "description": "L'imprimante XYZ est un modèle polyvalent et performant, idéal pour les besoins d'impression à domicile ou au bureau. Dotée d'une technologie d'impression jet d'encre de pointe, elle offre une qualité d'impression exceptionnelle pour les documents et les photos.",
       "price": 7500,
       "image": "https://i.pinimg.com/564x/40/73/a1/4073a1714141812618b5ab2108b04155.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Smart Phone",
+      "title": "Smart Phone",
+      "category": "tablet",
+      "description": "Samsung A12 RAM 6 et 32G  ....",
+      "price": 2000,
+      "image": "https://i.pinimg.com/736x/97/bf/20/97bf207dc0045fba2cd608ce434ede3c.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Smart-TV",
+      "title": "Smart-TV",
+      "category": "Smart-TV",
+      "description": "L'imprimante XYZ est un modèle polyvalent et performant, idéal pour les besoins d'impression à domicile ou au bureau. Dotée d'une technologie d'impression jet d'encre de pointe, elle offre une qualité d'impression exceptionnelle pour les documents et les photos.",
+      "price": 5000,
+      "image": "https://i.pinimg.com/564x/08/65/9e/08659eb32433f7a2cbeb4227d6dbb33a.jpg"
     }
   ],
   "users": [
@@ -1387,6 +1405,292 @@
             "image": "https://i.pinimg.com/564x/f2/b1/43/f2b1436f9c8f33335117d3aa5dba49a6.jpg"
           },
           "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 2,
+      "user": {
+        "id": 0,
+        "firstName": "",
+        "lastName": "",
+        "age": 0,
+        "userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-04T14:40:04.987Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "3",
+            "name": "Smart Phone",
+            "title": "Smart Phone Samsung A12",
+            "category": "smart phone",
+            "description": "Samsung A12 RAM 6 et 32G  ....",
+            "price": 2500,
+            "image": "https://i.pinimg.com/564x/2b/14/be/2b14bec38992888269ff2716a5f31d1a.jpg"
+          },
+          "quantity": 3
+        },
+        {
+          "id": "",
+          "product": {
+            "id": "1",
+            "name": "Computer",
+            "title": "Pc hp",
+            "price": 5600,
+            "description": "PC HP G11 Core i7 ....",
+            "category": "tablet",
+            "image": "https://i.pinimg.com/564x/f2/b1/43/f2b1436f9c8f33335117d3aa5dba49a6.jpg"
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 1,
+      "user": {
+        "id": 0,
+        "firstName": "",
+        "lastName": "",
+        "age": 0,
+        "userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-04T14:40:39.444Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "7",
+            "name": "Smart Phone",
+            "title": "Smart Phone",
+            "category": "tablet",
+            "description": "Samsung A12 RAM 6 et 32G  ....",
+            "price": 2000,
+            "image": "https://i.pinimg.com/736x/97/bf/20/97bf207dc0045fba2cd608ce434ede3c.jpg"
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 1,
+      "user": {
+        "id": 0,
+        "firstName": "",
+        "lastName": "",
+        "age": 0,
+        "userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-04T14:41:25.677Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "7",
+            "name": "Smart Phone",
+            "title": "Smart Phone",
+            "category": "tablet",
+            "description": "Samsung A12 RAM 6 et 32G  ....",
+            "price": 2000,
+            "image": "https://i.pinimg.com/736x/97/bf/20/97bf207dc0045fba2cd608ce434ede3c.jpg"
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 1,
+      "user": {
+        "id": 0,
+        "firstName": "",
+        "lastName": "",
+        "age": 0,
+        "userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-04T18:35:30.967Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "8",
+            "name": "Smart-TV",
+            "title": "Smart-TV",
+            "category": "Smart-TV",
+            "description": "L'imprimante XYZ est un modèle polyvalent et performant, idéal pour les besoins d'impression à domicile ou au bureau. Dotée d'une technologie d'impression jet d'encre de pointe, elle offre une qualité d'impression exceptionnelle pour les documents et les photos.",
+            "price": 5000,
+            "image": "https://i.pinimg.com/564x/08/65/9e/08659eb32433f7a2cbeb4227d6dbb33a.jpg"
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 1,
+      "user": {
+        "id": 0,
+        "firstName": "",
+        "lastName": "",
+        "age": 0,
+        "userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-05T00:47:11.015Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "2",
+            "name": "Tablet",
+            "title": "Printer LG",
+            "category": "tablet",
+            "price": 500,
+            "description": "Printer with  ....",
+            "image": "https://i.pinimg.com/564x/6c/7f/b1/6c7fb15e15c1e2431c2ddf2c5a7e240b.jpg"
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 1,
+      "user": {
+        "id": 0,
+        "firstName": "",
+        "lastName": "",
+        "age": 0,
+        "userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-05T18:39:13.272Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "3",
+            "name": "Smart Phone",
+            "title": "Smart Phone Samsung A12",
+            "category": "smart phone",
+            "description": "Samsung A12 RAM 6 et 32G  ....",
+            "price": 2500,
+            "image": "https://i.pinimg.com/564x/2b/14/be/2b14bec38992888269ff2716a5f31d1a.jpg"
+          },
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 1,
+      "user": {
+        "id": 0,
+        "firstName": "",
+        "lastName": "",
+        "age": 0,
+        "userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-05T19:56:46.123Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "2",
+            "name": "Tablet",
+            "title": "Printer LG",
+            "category": "tablet",
+            "price": 500,
+            "description": "Printer with  ....",
+            "image": "https://i.pinimg.com/564x/6c/7f/b1/6c7fb15e15c1e2431c2ddf2c5a7e240b.jpg"
+          },
+          "quantity": 2,
+          "_color": "Bleu",
+          "_size": "Medium"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 1,
+      "user": {
+        "id": 0,
+        "firstName": "",
+        "lastName": "",
+        "age": 0,
+        "userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-05T20:41:16.917Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "7",
+            "name": "Smart Phone",
+            "title": "Smart Phone",
+            "category": "tablet",
+            "description": "Samsung A12 RAM 6 et 32G  ....",
+            "price": 2000,
+            "image": "https://i.pinimg.com/736x/97/bf/20/97bf207dc0045fba2cd608ce434ede3c.jpg"
+          },
+          "quantity": 1,
+          "_color": "",
+          "_size": ""
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 2,
+      "user": {
+        "id": 0,
+        "firstName": "",
+        "lastName": "",
+        "age": 0,
+        "userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-05T20:50:03.146Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "6",
+            "name": "printer",
+            "title": "Printer LG",
+            "category": "tablet",
+            "description": "L'imprimante XYZ est un modèle polyvalent et performant, idéal pour les besoins d'impression à domicile ou au bureau. Dotée d'une technologie d'impression jet d'encre de pointe, elle offre une qualité d'impression exceptionnelle pour les documents et les photos.",
+            "price": 7500,
+            "image": "https://i.pinimg.com/564x/40/73/a1/4073a1714141812618b5ab2108b04155.jpg"
+          },
+          "quantity": 1,
+          "_color": "Vert",
+          "_size": ""
+        },
+        {
+          "id": "",
+          "product": {
+            "id": "5",
+            "name": "Gheadphones",
+            "title": "Smart watch",
+            "category": "headphones FE",
+            "description": "Les écouteurs de la marque offrent une qualité sonore exceptionnelle et un confort optimal pour une expérience d'écoute immersive..",
+            "price": 2700,
+            "image": "https://i.pinimg.com/564x/76/27/3b/76273b5e99d6b19e9ff2c8623ddf7ffb.jpg"
+          },
+          "quantity": 1,
+          "_color": "",
+          "_size": ""
         }
       ]
     }

@@ -17,10 +17,13 @@
           <h6 class="p-1">{{item._product.price}} DH</h6>
           <div class="card rounded-3 p-1 text-center">
             <p>Quantity : {{item._quantity}}</p>
+            <p>Color: {{item.color}}</p>
+            <p>Size: {{item.size}}</p>
           </div>
           <i class="bi bi-trash" (click)="deleteProduct(item)"></i>
         </div>
       </div>
+  
     </div>
   </div>
   <div class="col-sm-3 p-3">
@@ -30,11 +33,18 @@
      <!--
 <h6 class="text-end">{{priceOfAll()}}  DH</h6>
      --> 
-     <h6 class="text-end">{{totalPrice}}  DH</h6>
+     <h6 class="text-end">{{totalPrice}}  $</h6>
       <br>
       <div class="d-grid">
         <button type="button" class="btn btn-outline-info btn-block"  [disabled] = "cart._items.length <= 0" (click)="saveCart(cart)">Buy now</button>
       </div>
+      
+      <li class="nav-item">
+        <a class="nav-link btn btn-primary" routerLink="/products">Back to shop</a>
+      </li>
+      
     </div>
   </div>
+</div>
+<div>
 </div>

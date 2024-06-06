@@ -14,6 +14,11 @@ import { InvoiceManagementComponent } from './invoice-management/invoice-managem
 import { OfferDetailComponent } from './offers/offer-detail/offer-detail.component';
 import { OfferListComponent } from './offers/offer-list/offer-list.component';
 import { OfferDialogComponent } from './offers/offer-dialog/offer-dialog.component';
+import { UserListComponent } from './user/user-list/user-list.component';
+import { ProductoffersComponent } from './offers/productoffers/productoffers.component';
+import path from 'path';
+import { RegisterComponent } from './register/register.component';
+import { LoginUserComponent } from './login-user/login-user.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 export const routes: Routes = [
@@ -27,6 +32,7 @@ export const routes: Routes = [
  // {path : 'product-details', component :ProductDetailsComponent, title: 'Product details'},
  {path : 'details' , component: ProductDetailsComponent},
   {path : "products", component : ProductsComponent},
+
   
   
   {path : "cart" , component : ShoppingCartComponent},
@@ -43,7 +49,11 @@ export const routes: Routes = [
   
   {path : "invoicemanagement", component : InvoiceManagementComponent},
  // { path: '', component: OfferListComponent },
-  { path: "product/:id", component: ProductComponent }
+  { path: "product/:id", component: ProductComponent },
+  {path:"productoffer/:id",component:ProductoffersComponent},
+  {path: "register", component: UserListComponent},
+  {path: "enregistrer",component: RegisterComponent},
+  {path: "login_user", component: LoginUserComponent},
   
   
   

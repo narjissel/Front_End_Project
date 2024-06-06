@@ -1,0 +1,18 @@
+<h2>User List</h2>
+<ul>
+  <li *ngFor="let user of users">{{ user.name }} - {{ user.email }}</li>
+</ul>
+
+<h2>Create User</h2>
+<form (ngSubmit)=" onSubmit()">
+  <label for="email">Email:</label>
+  <input type="email" id="email" [(ngModel)]="newUser.email" name="email" required>
+  
+  <label for="name">Name:</label>
+  <input type="text" id="name" [(ngModel)]="newUser.name" name="name" required>
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" [(ngModel)]="newUser.password" name="password" required>
+  
+  <button type="submit">Create User</button>
+</form>

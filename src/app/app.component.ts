@@ -3,7 +3,7 @@ import {RouterLink, RouterOutlet} from '@angular/router';
 import {CommonModule, NgForOf} from "@angular/common";
 import {HttpClientModule, provideHttpClient} from "@angular/common/http";
 import {ProductService} from "./services/product.service";
-import { AuthModule, } from '@auth0/auth0-angular';
+import { AuthModule, User, } from '@auth0/auth0-angular';
 import { FormsModule, NgModel } from '@angular/forms';
 import { routes } from './app.routes';
 import { provideAuth0  } from '@auth0/auth0-angular';
@@ -27,13 +27,20 @@ import { OfferDetailComponent } from './offers/offer-detail/offer-detail.compone
 import { OfferService } from './offers/offer.service';
 import { OffersModule } from './offers/offers.module';
 import { OfferListComponent } from './offers/offer-list/offer-list.component';
+import { UserService } from './user/user.service';
+import { UserModule } from './user/user.module';
+import { UserCreateComponent } from './user/user-create/user-create.component';
+import { ProductoffersComponent } from './offers/productoffers/productoffers.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginUserComponent } from './login-user/login-user.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, RouterLink, NgForOf,HttpClientModule,
     AuthModule, HomeComponent, CatalogComponent, NavbarComponent, FooterComponent, RouterLinkActive, WelcomComponent,
-    LoginComponent, CommonModule,ProductDetailsComponent,FormsModule,InvoiceManagementComponent,OfferDetailComponent,OffersModule,OfferListComponent
+    LoginComponent, CommonModule,ProductDetailsComponent,FormsModule,InvoiceManagementComponent,OfferDetailComponent,OffersModule,OfferListComponent,
+    UserModule,UserCreateComponent,ProductoffersComponent,RegisterComponent,LoginUserComponent
 
 ],
   templateUrl: './app.component.html',
@@ -41,7 +48,8 @@ import { OfferListComponent } from './offers/offer-list/offer-list.component';
   providers: [
     ProductService,
     ShoppingCartComponent,
-    OfferService
+    OfferService,
+    UserService
   ]
   
 })
@@ -84,7 +92,12 @@ export class AppComponent {
     {title: "login" , "route": "/login"},
     {title: "search" , "route": "/search"},
     {title: "details", "route": "/details"},
-    {title: "invoicemanagement", "route": "/invoicemanagement"}
+    {title: "invoicemanagement", "route": "/invoicemanagement"},
+    {title: "register", "route": "/register"},
+    {title: "productoffer","route":"/productoffer"},
+    {title: "enregistrer","route":"/enregistrer"},
+    {title: "login_user","route":"/login_user"},
+    
     
     //{title : "catalog" , "route" : "/catalog"},
   ];

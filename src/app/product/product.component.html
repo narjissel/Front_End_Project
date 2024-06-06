@@ -1,45 +1,90 @@
 <div class="row p-3 m-3">
   <div class="col-sm-9">
-    <div class="card">
+   
       <div class="card-body">
         <img [src]="product.image" [alt]="product.name" class="img-thumbnail">
-      </div>
+    
     </div>
   </div>
-  <div class="col-sm-2 align-content-center">
-    <div class="d-flex justify-content-between">
-      <h5>{{product.name}}</h5>
-      <h5>{{product.price}} $</h5>
-    </div>
+  
+  <div class="product-details col-sm-3">
+    <h5>{{product.name}}</h5>
+    <h5>{{product.price}} $</h5>
+  
     <div class="card m-2">
       <div class="card-body">
         <div class="row text-center">
           <div class="col">
-            <button class="btn btn-info rounded-circle" (click)="remove()">
-              -
-            </button>
+            <button class="btn btn-info rounded-circle" (click)="remove()">-</button>
           </div>
-          <div class="col h2">
-            {{quantity}}
-          </div>
+          <div class="col h2">{{quantity}}</div>
           <div class="col">
-            <button class="btn btn-info rounded-circle" (click)="add()">
-              +
-            </button>
+            <button class="btn btn-info rounded-circle" (click)="add()">+</button>
           </div>
         </div>
       </div>
     </div>
-    <div>
-      <p class="text-muted">{{product.title}}</p>
-      <p>{{product.description}}</p>
-    </div>
-    <div class="p-3 flex d-flex justify-content-between">
-      <h5>Total : </h5>
+  
+    <p class="text-muted">{{product.title}}</p>
+    <p>{{product.description}}</p>
+  
+    <div class="flex justify-content-between">
+      <h5>Total :</h5>
       <h5>{{quantity * product.price}} $</h5>
     </div>
-    <div class="d-grid">
-      <button type="button" class="btn btn-outline-info btn-block" (click)="buy()" [disabled] = "quantity <= 0">add to the Cart</button>
+  
+<!-- Message d'alerte pour le stock -->
+<div *ngIf="outOfStockMessage" class="alert alert-danger">
+  {{ outOfStockMessage }}
+</div>
+
+ <!-- Sélection de la couleur -->
+ <div class="p-2">
+  <label>Choisir la couleur:</label>
+  <div class="color-options">
+    <label *ngFor="let color of availableColors" class="color-label">
+      <input 
+        type="radio" 
+        [value]="color" 
+        [checked]="selectedColor === color" 
+        (change)="selectColor(color)">
+      <span class="color-box" [ngStyle]="{'background-color': getColorHex(color)}"></span>
+      <span class="color-name">{{color}}</span>
+    </label>
+  </div>
+  <!-- Alerte de bienvenue -->
+  <div *ngIf="alertMessage" class="alert alert-info" role="alert">
+    {{ alertMessage }}
+  </div>
+</div>
+
+  
+    <!-- Sélection de la taille -->
+    <div class="size-options p-2">
+      <label>Choisir la taille:</label>
+      <div class="btn-group">
+        <button 
+          *ngFor="let size of availableSizes" 
+          type="button" 
+          class="btn btn-size" 
+          [ngClass]="{'selected': selectedSize === size}" 
+          (click)="selectSize(size)">
+          {{ size }}
+        </button>
+      </div>
     </div>
+    
+    
+   <!-- Bouton "Add to Cart" -->
+<div class="d-grid">
+  <button 
+    type="button" 
+    class="btn btn-outline-info btn-block" 
+    (click)="buy()" 
+    [disabled]="quantity <= 0 || outOfStockMessage !== ''">
+    Add to Cart
+  </button>
+</div>
+
   </div>
 </div>

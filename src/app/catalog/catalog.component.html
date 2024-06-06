@@ -1,35 +1,12 @@
 
 <div class="container">
-  <!--
-<div class="filters">
-    <a routerLink="/catalog" [queryParams]="{filter:'phone'}" routerLinkActive="active" class="button" i18n> Smart Phone </a>
-
-    <a routerLink="/catalog" [queryParams]="{filter:'tablet'}" routerLinkActive="active" class="button" i18n> Tablet </a>
-
-    <a routerLink="/catalog" [queryParams]="{filter:'smarttv'}" routerLinkActive="active" class="button" i18n> Smart TV </a>
-
-    <a routerLink="/catalog"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="button" i18n> All </a>    
-  </div>
-  -->
-
-  <div class="filters">
+ <div class="filters">
     <a routerLink="/catalog" [queryParams]="{filter:'smart phone'}" routerLinkActive="active" class="button" i18n> Smart Phone </a>
     <a routerLink="/catalog" [queryParams]="{filter:'tablet'}" routerLinkActive="active" class="button" i18n> Tablet </a>
     <a routerLink="/catalog" [queryParams]="{filter:'headphones FE'}" routerLinkActive="active" class="button" i18n> headphones</a>
     
     <a routerLink="/catalog" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="button" i18n> All </a>
   </div>
-  
-  <!--
-<div *ngFor="let product of getFilteredProducts()">
-    <img [src]="product.image" alt="{{ product.title }}"> 
-    <h3>{{ product.title }}</h3>
-    <p>{{ product.description }}</p>
-    <button (click)="aaddToCart(product)">Add to Cart</button>
-  </div>
-  -->
-  
-
   <div class="products">
     <div *ngFor="let product of getFilteredProducts()" class="product-item">
       <div class="product">
@@ -38,7 +15,8 @@
           <div class="product-info">
             <h3 class="name">{{ product.title }}</h3>
             <p class="description">{{ product.description }}</p>
-            <button (click)="addToCart(product)" class="add-to-cart" i18n>Add to Cart</button>
+           <!-- <button (click)="addToCart(product)" class="add-to-cart" i18n>Add to Cart</button>  --> 
+           <button (click)="buy()" class="add-to-cart" i18n>Add to Cart</button>
           </div>
         </div>
         <div class="price">{{ product.price | currency }}</div>
