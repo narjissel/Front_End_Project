@@ -1,11 +1,12 @@
 import {Product} from "./product";
 import {ShoppingCartItem} from "./shoppingCartItem";
-import {User} from "./user";
+import {useradmin} from "./useradmin";
+import { UserType } from "./userType";
 
 export class ShoppingCart{
   private id : string = "1";
   private total : number = 0;
-  private user : User = new User();
+  private user : useradmin = new useradmin();
   private date : Date = new Date;
   private items: Array<ShoppingCartItem> = [];
 
@@ -29,11 +30,11 @@ export class ShoppingCart{
     this.total = value;
   }
 
-  get _user(): User {
+  get _user(): useradmin {
     return this.user;
   }
 
-  set _user(value: User) {
+  set _user(value:useradmin) {
     this.user = value;
   }
 

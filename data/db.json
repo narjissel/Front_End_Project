@@ -22,7 +22,7 @@
       "id": "3",
       "name": "Smart Phone",
       "title": "Smart Phone Samsung A12",
-      "category": "smart phone",
+      "category": "phone",
       "description": "Samsung A12 RAM 6 et 32G  ....",
       "price": 2500,
       "image": "https://i.pinimg.com/564x/2b/14/be/2b14bec38992888269ff2716a5f31d1a.jpg"
@@ -31,7 +31,7 @@
       "id": "4",
       "name": "Gheadphones",
       "title": "headphones FE",
-      "category": "headphones FE",
+      "category": "HeadPhone",
       "description": "Les écouteurs de la marque offrent une qualité sonore exceptionnelle et un confort optimal pour une expérience d'écoute immersive..",
       "price": 3600,
       "image": "https://i.pinimg.com/736x/0c/fc/ea/0cfcea192634061869dd075536bddb4f.jpg"
@@ -58,7 +58,7 @@
       "id": "7",
       "name": "Smart Phone",
       "title": "Smart Phone",
-      "category": "tablet",
+      "category": "phone",
       "description": "Samsung A12 RAM 6 et 32G  ....",
       "price": 2000,
       "image": "https://i.pinimg.com/736x/97/bf/20/97bf207dc0045fba2cd608ce434ede3c.jpg"
@@ -67,8 +67,8 @@
       "id": "8",
       "name": "Smart-TV",
       "title": "Smart-TV",
-      "category": "Smart-TV",
-      "description": "L'imprimante XYZ est un modèle polyvalent et performant, idéal pour les besoins d'impression à domicile ou au bureau. Dotée d'une technologie d'impression jet d'encre de pointe, elle offre une qualité d'impression exceptionnelle pour les documents et les photos.",
+      "category": "smarttv",
+      "description": "TV XYZ est un modèle polyvalent et performant, idéal pour les besoins d'impression à domicile ou au bureau. Dotée d'une technologie d'impression jet d'encre de pointe, elle offre une qualité d'impression exceptionnelle pour les documents et les photos.",
       "price": 5000,
       "image": "https://i.pinimg.com/564x/08/65/9e/08659eb32433f7a2cbeb4227d6dbb33a.jpg"
     }
@@ -76,9 +76,16 @@
   "users": [
     {
       "id": "1",
-      "firstName": "Nouhaila",
-      "lastName": "Chkhonty",
-      "age": 22,
+      "firstName": "narjiss",
+      "lastName": "elmekadem",
+      "age": 21,
+      "userType": "Admin"
+    },
+    {
+      "id": "2",
+      "firstName": "nono",
+      "lastName": "EL",
+      "age": 21,
       "userType": "Admin"
     }
   ],
@@ -1687,6 +1694,173 @@
             "description": "Les écouteurs de la marque offrent une qualité sonore exceptionnelle et un confort optimal pour une expérience d'écoute immersive..",
             "price": 2700,
             "image": "https://i.pinimg.com/564x/76/27/3b/76273b5e99d6b19e9ff2c8623ddf7ffb.jpg"
+          },
+          "quantity": 1,
+          "_color": "",
+          "_size": ""
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 2,
+      "user": {
+        "id": 0,
+        "firstName": "",
+        "lastName": "",
+        "age": 0,
+        "userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-06T21:47:35.375Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "1",
+            "name": "Computer",
+            "title": "Pc hp",
+            "price": 5600,
+            "description": "PC HP G11 Core i7 ....",
+            "category": "tablet",
+            "image": "https://i.pinimg.com/564x/f2/b1/43/f2b1436f9c8f33335117d3aa5dba49a6.jpg"
+          },
+          "quantity": 1,
+          "_color": "Vert",
+          "_size": "Medium"
+        },
+        {
+          "id": "",
+          "product": {
+            "id": "5",
+            "name": "Gheadphones",
+            "title": "Smart watch",
+            "category": "headphones FE",
+            "description": "Les écouteurs de la marque offrent une qualité sonore exceptionnelle et un confort optimal pour une expérience d'écoute immersive..",
+            "price": 2700,
+            "image": "https://i.pinimg.com/564x/76/27/3b/76273b5e99d6b19e9ff2c8623ddf7ffb.jpg"
+          },
+          "quantity": 2,
+          "_color": "Bleu",
+          "_size": "Small"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 2,
+      "user": {
+        "id": 0,
+        "firstName": "",
+        "lastName": "",
+        "age": 0,
+        "userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-07T02:48:16.829Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "_id": "",
+            "_name": "",
+            "_price": 0,
+            "_title": "",
+            "_description": "",
+            "_image": "",
+            "_catalog": "",
+            "_stock": 0,
+            "_category": ""
+          },
+          "quantity": 0,
+          "_color": "",
+          "_size": ""
+        },
+        {
+          "id": "",
+          "product": {
+            "id": "2",
+            "name": "Tablet",
+            "title": "Printer LG",
+            "category": "tablet",
+            "price": 500,
+            "description": "Printer with  ....",
+            "image": "https://i.pinimg.com/564x/6c/7f/b1/6c7fb15e15c1e2431c2ddf2c5a7e240b.jpg"
+          },
+          "quantity": 1,
+          "_color": "Bleu",
+          "_size": ""
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 2,
+      "user": {
+        "_id": 0,
+        "_firstName": "",
+        "_lastName": "",
+        "_age": 0,
+        "_userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-07T23:53:45.745Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "8",
+            "name": "Smart-TV",
+            "title": "Smart-TV",
+            "category": "Smart-TV",
+            "description": "L'imprimante XYZ est un modèle polyvalent et performant, idéal pour les besoins d'impression à domicile ou au bureau. Dotée d'une technologie d'impression jet d'encre de pointe, elle offre une qualité d'impression exceptionnelle pour les documents et les photos.",
+            "price": 5000,
+            "image": "https://i.pinimg.com/564x/08/65/9e/08659eb32433f7a2cbeb4227d6dbb33a.jpg"
+          },
+          "quantity": 2,
+          "_color": "Bleu",
+          "_size": ""
+        },
+        {
+          "id": "",
+          "product": {
+            "id": "4",
+            "name": "Gheadphones",
+            "title": "headphones FE",
+            "category": "headphones FE",
+            "description": "Les écouteurs de la marque offrent une qualité sonore exceptionnelle et un confort optimal pour une expérience d'écoute immersive..",
+            "price": 3600,
+            "image": "https://i.pinimg.com/736x/0c/fc/ea/0cfcea192634061869dd075536bddb4f.jpg"
+          },
+          "quantity": 1,
+          "_color": "Vert",
+          "_size": "Small"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "total": 1,
+      "user": {
+        "_id": 0,
+        "_firstName": "",
+        "_lastName": "",
+        "_age": 0,
+        "_userType": 1,
+        "shoppingCarts": []
+      },
+      "date": "2024-06-08T01:10:23.887Z",
+      "items": [
+        {
+          "id": "",
+          "product": {
+            "id": "2",
+            "name": "Tablet",
+            "title": "Printer LG",
+            "category": "tablet",
+            "price": 500,
+            "description": "Printer with  ....",
+            "image": "https://i.pinimg.com/564x/6c/7f/b1/6c7fb15e15c1e2431c2ddf2c5a7e240b.jpg"
           },
           "quantity": 1,
           "_color": "",

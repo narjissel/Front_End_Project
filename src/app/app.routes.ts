@@ -8,7 +8,7 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WelcomComponent } from './welcom/welcom.component';
-import { LoginComponent } from './login/login.component';
+
 import { SearchComponent } from './search/search.component';
 import { InvoiceManagementComponent } from './invoice-management/invoice-management.component';
 import { OfferDetailComponent } from './offers/offer-detail/offer-detail.component';
@@ -19,6 +19,8 @@ import { ProductoffersComponent } from './offers/productoffers/productoffers.com
 import path from 'path';
 import { RegisterComponent } from './register/register.component';
 import { LoginUserComponent } from './login-user/login-user.component';
+import { AdminComponent } from './admin/admin/admin.component';
+import { StockProductComponent } from './stock-product/stock-product/stock-product.component';
 //import { NavbarComponent } from './navbar/navbar.component';
 
 export const routes: Routes = [
@@ -39,7 +41,7 @@ export const routes: Routes = [
   {path : "product/:id" , component : ProductComponent},
   {path : "feedback", component : FeedbackComponent},
   {path : "navbar" , component : NavbarComponent},
-  {path: "login", component : LoginComponent},
+ 
   //{path: "search/:productTitle", component : SearchComponent}
   { path: 'search', component: SearchComponent },
   { path: 'search/:title', component: SearchComponent },
@@ -53,7 +55,9 @@ export const routes: Routes = [
   {path:"productoffer/:id",component:ProductoffersComponent},
   {path: "register", component: UserListComponent},
   {path: "enregistrer",component: RegisterComponent},
-  {path: "login_user", component: LoginUserComponent},
+  {path: "login", component: LoginUserComponent},
+  {path : "admin", component: AdminComponent},
+  {path : "stock_product", component: StockProductComponent},
   
   
   

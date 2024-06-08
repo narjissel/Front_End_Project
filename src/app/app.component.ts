@@ -13,8 +13,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterLinkActive } from '@angular/router';
 import { WelcomComponent } from './welcom/welcom.component';
-import { LoginComponent } from './login/login.component';
-//import { Router } from 'express';
 import { AuthService } from './Service_Auth/auth.service';
 import { authInterceptor } from './Service_Auth/auth.interceptor';
 import { pipe } from 'rxjs';
@@ -33,14 +31,17 @@ import { UserCreateComponent } from './user/user-create/user-create.component';
 import { ProductoffersComponent } from './offers/productoffers/productoffers.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginUserComponent } from './login-user/login-user.component';
+import { AdminComponent } from './admin/admin/admin.component';
+import { AdminService } from './admin/admin.service';
+import { StockProductService } from './stock-product/stock-product.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, RouterLink, NgForOf,HttpClientModule,
     AuthModule, HomeComponent, CatalogComponent, NavbarComponent, FooterComponent, RouterLinkActive, WelcomComponent,
-    LoginComponent, CommonModule,ProductDetailsComponent,FormsModule,InvoiceManagementComponent,OfferDetailComponent,OffersModule,OfferListComponent,
-    UserModule,UserCreateComponent,ProductoffersComponent,RegisterComponent,LoginUserComponent
+    CommonModule,ProductDetailsComponent,FormsModule,InvoiceManagementComponent,OfferDetailComponent,OffersModule,OfferListComponent,
+    UserModule,UserCreateComponent,ProductoffersComponent,RegisterComponent,LoginUserComponent,AdminComponent
 
 ],
   templateUrl: './app.component.html',
@@ -49,7 +50,9 @@ import { LoginUserComponent } from './login-user/login-user.component';
     ProductService,
     ShoppingCartComponent,
     OfferService,
-    UserService
+    UserService,
+    AdminService,
+    StockProductService
   ]
   
 })
@@ -89,15 +92,15 @@ export class AppComponent {
     {title: "feedback", "route": "/feedback"},
     {title : "navbar" , "route" : "/navbar"},
     {title: "home" , "route" : "/home"},
-    {title: "login" , "route": "/login"},
     {title: "search" , "route": "/search"},
     {title: "details", "route": "/details"},
     {title: "invoicemanagement", "route": "/invoicemanagement"},
     {title: "register", "route": "/register"},
     {title: "productoffer","route":"/productoffer"},
     {title: "enregistrer","route":"/enregistrer"},
-    {title: "login_user","route":"/login_user"},
-    
+    {title: "login","route":"/login"},
+    {title: "admin","route":"/admin"},
+    {title: "stock_product","route":"/stock_product"},
     
     //{title : "catalog" , "route" : "/catalog"},
   ];

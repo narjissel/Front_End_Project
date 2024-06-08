@@ -1,0 +1,42 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  h1, h2 {
+    margin-top: 20px;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  thead.thead-dark th {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer button {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border: none; /* Supprimer la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de la souris */
+    transition: background-color 0.3s ease; /* Transition fluide de la couleur de fond */
+  }
+  
+  .footer button:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+  }
+  
+  

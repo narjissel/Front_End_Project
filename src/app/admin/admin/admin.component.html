@@ -1,0 +1,81 @@
+<div class="container">
+  <div class="container text-center">
+    <h1 class="my-4">Administration Interface</h1>
+  </div>
+  
+
+    <div class="footer">
+      <p><a href="/stock_product">Gestion de Produits </a></p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mb-4">
+        <h2>Liste des administrateurs :</h2>
+        <table class="table table-hover table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Nom</th>
+              <th scope="col">Prénom</th>
+              <th scope="col">Âge</th>
+              <th scope="col">Type d'utilisateur</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let admin of admins">
+              <td>{{ admin.firstName }}</td>
+              <td>{{ admin.lastName }}</td>
+              <td>{{ admin.age }}</td>
+              <td>{{ admin.userType }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-12 mb-4">
+
+        <h2>Liste des utilisateurs connectés :</h2>
+        <table class="table table-hover table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Nom</th>
+              <th scope="col">Email</th>
+              <th scope="col">Password</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users">
+              <td>{{ user.name }}</td>
+              <td>{{ user.email }}</td>
+              <td>{{ user.password }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h2>Liste des produits disponibles :</h2>
+        <table class="table table-hover table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Nom</th>
+              <th scope="col">Prix</th>
+              <th scope="col">Categorie</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of products">
+              <td>{{ product.name }}</td>
+              <td>{{ product.price | currency }}</td>
+              <td>{{ product.category }}</td>
+              
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      
+
+    </div>
+  </div>
+  

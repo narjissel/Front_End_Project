@@ -1,0 +1,82 @@
+<!-- product.component.html -->
+
+<div *ngIf="products" class="product-list">
+    <h2>Liste des Produits</h2>
+    <ul>
+      <li *ngFor="let product of products" class="product-item">
+        <div class="product-image">
+          <img [src]="product.image" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h3>{{ product.name }}</h3>
+          <h3>{{ product.id }}</h3>
+          <p>{{ product.description }}</p>
+          <p>{{ product.price | currency }}</p>
+        </div>
+      </li>
+    </ul>
+  
+  
+ 
+    <div *ngIf="products" class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="form-container">
+              <h2 class="mb-4 text-center">Ajouter un Produit</h2>
+              <form (submit)="onSubmit()">
+                <div class="form-group">
+                  <label for="category">Catégorie:</label>
+                  <input type="text" id="category" name="category" [(ngModel)]="newProduct.category" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="description">Description:</label>
+                  <input type="text" id="description" name="description" [(ngModel)]="newProduct.description" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="image">Image:</label>
+                  <input type="text" id="image" name="image" [(ngModel)]="newProduct.image" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="name">Nom:</label>
+                  <input type="text" id="name" name="name" [(ngModel)]="newProduct.name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="price">Prix:</label>
+                  <input type="number" id="price" name="price" [(ngModel)]="newProduct.price" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="title">Titre:</label>
+                  <input type="text" id="title" name="title" [(ngModel)]="newProduct.title" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Ajouter Produit</button>
+          <!--   <button class="btn btn-danger mr-2" (click)="deleteProduct(newProduct)">Supprimer</button>  -->     
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div *ngIf="products" class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="form-container">
+              <h2 class="mb-4 text-center">Supprimer un Produit</h2>
+              <!-- Formulaire de suppression de produit -->
+              <form (submit)="deleteProduct()">
+                <!-- Champ pour l'ID du produit à supprimer -->
+                <div class="form-group">
+                  <label for="productId">ID du Produit:</label>
+                  <input type="text" id="productId" name="productId" [(ngModel)]="productIdToDelete" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-danger">Supprimer Produit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+     
+          
+
+ </div>
